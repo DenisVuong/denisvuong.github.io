@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/timeline.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/timeline.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
 
 <body>
 
-<?php require("../Controller/navbar.php") ?>
+<?php require("Controller/navbar.php") ?>
 
 <div class="container">
     <div id=welcome>
@@ -42,7 +42,7 @@
         </div>
     </div>
 
-    <?php require("../Controller/SocialMedia.php") ?>
+    <?php require("Controller/SocialMedia.php") ?>
 </div>
 
 
@@ -59,7 +59,7 @@
 </div>
 
 <?php 
-    require("../Controller/parcours.php") 
+    require("Controller/parcours.php") 
 ?>
 
 </body>
