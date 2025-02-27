@@ -1,0 +1,91 @@
+.edu-section {
+    padding-top: 100px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 50px auto;
+    color: white;
+    font-family: 'Lexend Zetta', sans-serif;
+    padding-bottom: 100px;
+}
+
+.edu-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Conteneur principal */
+.edu-timeline {
+    position: relative;
+    margin: 50px auto;
+}
+
+/* Ligne verticale unique */
+.edu-middle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: white;
+    transform: translateX(-50%);
+}
+
+/* Chaque élément de la timeline */
+.edu-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Sections gauche et droite */
+.edu-left, .edu-right {
+    width: 45%;
+}
+
+.edu-left{
+    padding-top: 35px;
+    text-align: right;
+}
+
+/* Date et lieu */
+.edu-date {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.edu-location {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Diplôme et description */
+.edu-degree {
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Cercle parfaitement aligné avec les titres */
+.edu-circle {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 17%;
+    transform: translate(-50%, -50%);
+}
+
+.edu-desc{
+    font-size: 16px;
+    width: 90%;
+}
+
+.edu-location{
+    font-weight: lighter;
+    font-size: 11px;
+}
