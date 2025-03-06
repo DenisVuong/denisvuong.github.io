@@ -1,0 +1,167 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    display: none;
+}
+
+.popup .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.popup .content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    width: 60vw;
+    height: 30vh;
+    max-width: 800px;
+    padding: 20px;
+    z-index: 2;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+    transform: translateY(-20px) scale(0.95);
+    opacity: 0;
+}
+
+.popup.active .content {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+.popup .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: black;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s ease, color 0.3s, transform 0.2s ease;
+}
+
+.popup .close-btn:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+.popup.active {
+    display: flex;
+}
+
+
+.card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    height: 500px;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -120px;
+    font-family:'Lexend Zetta', sans-serif; 
+    font-weight: bold;
+    text-align: left;
+    
+}
+
+.card button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.card button:hover {
+    background: black;
+    color: white;
+    transform: scale(1.05);
+}
+
+.container_card{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 80vw;
+    padding-top: 100px;
+    max-width: 100%;
+    padding-bottom: 300px;
+    margin: 0 auto;
+}
+
+.appli-pop img{
+    height: 40px;
+    text-align: left;
+
+}
+
+.content h3 {
+    font-family:'Lexend Zetta', sans-serif; 
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.content p{
+    margin-top: -10px;
+    font-family: 'Josefin Sans', sans-serif ;
+    font-weight: 300;
+}
+
+.appli-pop{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}

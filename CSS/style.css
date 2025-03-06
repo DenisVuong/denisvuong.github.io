@@ -1,0 +1,221 @@
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+html {
+    scrollbar-color: #555 #1a1a1a;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), 
+                url('../img/BGBlack.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    background: rgba(77, 77, 77, 0.397);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 0px 40px;
+}
+
+.lang {
+    position: absolute;
+    right: 20px; 
+}
+
+.lang select {
+    background: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(10px); 
+    border: none;
+    color: white;
+    padding: 10px;
+    font-family:"Josefin Sans",sans-serif;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out;
+}
+
+.lang select:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.lang select:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+.menu a {
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu a:hover {
+    color: #a3a3a3;
+    transform: scale(1.1);
+}
+
+#welcome {
+    width: 70%;
+    max-width: 800px;
+}
+
+.regular {
+    font-family: 'Lexend Zetta', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 36px;
+}
+
+.black {
+    font-family: 'Lexend Zetta', sans-serif;
+    font-weight: 900;
+    color: white;
+    font-size: 36px;
+}
+
+.light {
+    font-family: 'Lexend Zetta', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.semibold {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.inline-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: -25px;
+}
+
+#desc {
+    padding-top: 200px;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.titleTxt {
+    font-family: 'Lexend Zetta', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.simpleTxt {
+    text-align: left;
+    font-family: 'Lexend Zetta', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+
+    #welcome {
+        width: 90%;
+        padding: 0;
+    }
+
+    .media {
+        width: 100px;
+        padding: 20px;
+    }
+}
+
+.container-sections {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    width: 90%;
+    margin: 50px auto;
+    gap: 300px;
+}
+
+
+.parcours {
+    margin-left: 100px;
+    width: 30%;
+}
+
+.skills{
+    width:80%;
+}
+
+@media screen and (max-width: 768px) {
+    .container-sections {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+#three{
+    padding-bottom: 200px;
+}

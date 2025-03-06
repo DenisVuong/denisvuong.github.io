@@ -1,0 +1,65 @@
+.Mailcontainer{
+    padding: 50px;
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Zetta', sans-serif;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.form{
+    padding-top: 50px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column; 
+    gap: 30px;
+}
+
+input, textarea {
+    width: 500px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    backdrop-filter: blur(10px);
+    font-size: 16px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+textarea {
+    resize: none;
+    height: 250px;
+}
+
+/* Bouton */
+button {
+    padding: 15px;
+    background: #c2c2c2;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
