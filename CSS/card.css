@@ -153,15 +153,62 @@
     font-weight: 300;
 }
 
-.appli-pop{
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    border: none;
-    border-radius: 10px;
+.appli-pop {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
     position: absolute;
     bottom: 20px;
-    left: 20px;
+    left: 0;
+    width: 100%; 
+    padding: 0 20px;
+    box-sizing: border-box;
 }
+
+.logos {
+    display: flex; 
+    gap: 15px; 
+}
+
+.button {
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+
+
+.button {
+    font-family: "Josefin Sans",sans-serif;
+    padding: 15px;
+    background: white;  
+    text-decoration: none;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    right: 10px;
+}
+
+.button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
