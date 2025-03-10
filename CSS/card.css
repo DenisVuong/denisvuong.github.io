@@ -26,7 +26,7 @@
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
     width: 60vw;
-    height: 30vh;
+    height: 21vh;
     max-width: 800px;
     padding: 20px;
     z-index: 2;
@@ -76,28 +76,35 @@
     backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 20px;
-    height: 500px;
-    width: 350px;
+    height: 600px;
+    width: 400px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .card-img {
     width: 100%;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .card h2 {
     color: white;
     font-size: 20px;
-    font-weight: bold;
-    margin-top: -120px;
-    font-family:'Lexend Zetta', sans-serif; 
-    font-weight: bold;
-    text-align: left;
-    
+    font-weight: 900;
+    margin: 0 0 10px 0;
+    font-family: 'Lexend Zetta', sans-serif;
+}
+
+.card p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    padding-top: 10px;
+    font-weight: 400;
+    margin: 0;
+    flex-grow: 1;
 }
 
 .card button {
@@ -114,8 +121,7 @@
     border-radius: 10px;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s ease;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .card button:hover {
@@ -147,11 +153,6 @@
     font-size: 16px;
 }
 
-.content p{
-    margin-top: -10px;
-    font-family: 'Josefin Sans', sans-serif ;
-    font-weight: 300;
-}
 
 .appli-pop {
     display: flex; 
@@ -212,3 +213,14 @@
     color: white;
 }
 
+.lien{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: white    ;
+    transition: background 0.3s ease-in-out;
+}
+
+.lien:hover{
+    color: rgb(151, 151, 151);
+
+}
