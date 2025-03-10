@@ -67,7 +67,7 @@ const translation = {
         contact: "Contact",
 
         // Welcome
-        bienvenue: "Welcome, I am ",
+        bienvenue: "Welcome, I'm ",
         jesuis: "I am ",
         etudiant: "a computer science student",
 
