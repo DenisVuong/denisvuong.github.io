@@ -23,6 +23,7 @@ h1 {
 }
 
 input, textarea {
+    font-family: "Josefin Sans",sans-serif;;
     width: 500px;
     padding: 15px;
     background: rgba(255, 255, 255, 0.2);
@@ -45,6 +46,7 @@ textarea {
 
 /* Bouton */
 button {
+    font-family: "Josefin Sans",sans-serif;
     padding: 15px;
     background: #c2c2c2;
     color: black;
