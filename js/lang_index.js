@@ -101,7 +101,7 @@ const translation = {
 
         // Card
         projet:"My projects",
-        ressource: "Resource",
+        ressource: "Resources",
         livrable: "Link to deliverables",
         site: "Project link",
         rendu: "Project submission link",
