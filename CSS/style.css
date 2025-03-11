@@ -23,6 +23,7 @@ html {
 }
 
 body {
+    transition: all 1s ease; 
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('../img/BGBlack.jpg') no-repeat center/cover;
     background-attachment: fixed;
     height: 100vh;
@@ -32,6 +33,42 @@ body {
     color: white;
     overflow-x: hidden;
 }
+
+
+body.loading {
+    padding-top: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('../img/BGBlack.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 1s ease, visibility 1s ease;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.loader-container.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
 
 * {
     max-width: 100%;
@@ -197,7 +234,7 @@ body {
     align-items: center;
     width: 90%;
     margin: 50px auto;
-    gap: 300px; /* grand espace ici */
+    gap: 300px; 
     padding-bottom: 200px;
   }
   
@@ -207,7 +244,7 @@ body {
   }
   
   .skills-section {
-    width: 80%; /* ici la largeur de la section skills */
+    width: 80%; 
     max-width: 1000px;
   }
   
@@ -242,3 +279,22 @@ h1{
     font-size: 42px;
 }
 
+
+.fade-in {
+opacity: 0;
+transform: translateY(-20px);
+animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+.fade-in.delay-1 { animation-delay: 0.2s; }
+.fade-in.delay-2 { animation-delay: 0.4s; }
+.fade-in.delay-3 { animation-delay: 0.6s; }
+.fade-in.delay-4 { animation-delay: 0.8s; }
+.fade-in.delay-5 { animation-delay: 1s; }

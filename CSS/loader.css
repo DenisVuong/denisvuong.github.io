@@ -1,0 +1,47 @@
+
+.preloader-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.preloader-1 div {
+    color: #fff;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-family: 'Lexend Zetta', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.preloader-1 .lines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.preloader-1 .line {
+    width: 2px;
+    height: 20px;
+    background: #fff;
+    margin: 0 2px;
+    display: block;
+    animation: opacity-1 1000ms infinite ease-in-out;
+}
+
+.preloader-1 .line-1 { animation-delay: 850ms; }
+.preloader-1 .line-2 { animation-delay: 650ms; }
+.preloader-1 .line-3 { animation-delay: 450ms; }
+.preloader-1 .line-4 { animation-delay: 250ms; }
+.preloader-1 .line-5 { animation-delay: 0ms; }
+.preloader-1 .line-6 { animation-delay: 250ms; }
+.preloader-1 .line-7 { animation-delay: 450ms; }
+.preloader-1 .line-8 { animation-delay: 650ms; }
+.preloader-1 .line-9 { animation-delay: 850ms; }
+
+@keyframes opacity-1 {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}

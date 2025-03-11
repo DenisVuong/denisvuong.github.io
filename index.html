@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/media_vertical.css">
     <link rel="stylesheet" href="CSS/mailForm.css">
     <link rel="stylesheet" href="CSS/card.css">
+    <link rel="stylesheet" href="CSS/loader.css">
     <link rel="shortcut icon" href="x-icon" href="img/logosite.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,339 +25,362 @@
 </head>
 
 
-<body>
-<nav class="nav">
-    <ul class="menu">
-        <li><a href="#one" data-translate="info">Infos</a></li>
-        <li><a href="#two" data-translate="projet">Projet</a></li>
-        <li><a href="#three" data-translate="contact">Contact</a></li>
-    </ul>
+<body class="loading"> 
 
-    <div class="lang">
-       <select name="" id="language-select">
-            <option value="fr">🇫🇷 Français</option>
-            <option value="en">🇺🇸 English</option>
-       </select>
-    </div>
-</nav>
 
-<script src="js/lang_index.js"></script>
-<script src="js/hide_page.js"></script>
-<section id="one" >
-<div class="container">
-    <div id=welcome>
-        <p>
-            <span class="regular" data-translate="bienvenue">Bienvenue je suis </span> 
-            <span class="black">Denis.</span> 
-            <br> 
-            <span class="regular" data-translate="jesuis">Je suis </span> 
-            <span class="black" data-translate="etudiant">étudiant en informatique.</span>
-        </p>
-
-        <div class="inline-container">
-            <p>📍</p>
-            <p class="light" data-translate="actuellement">
-                Actuellement en 
-                    <span class="semibold" data-translate="but">BUT Informatique</span> 
-                à l’
-                    <span class="semibold" data-translate="iut">IUT de Villetaneuse</span>
-            </p>
+<div class="loader-container" id="loader">
+    <div class="preloader-1">
+        <div>Loading</div>
+        <div class="lines">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+            <span class="line line-4"></span>
+            <span class="line line-5"></span>
+            <span class="line line-6"></span>
+            <span class="line line-7"></span>
+            <span class="line line-8"></span>
+            <span class="line line-9"></span>
         </div>
     </div>
+</div>
 
-    <div class=media>
 
+<div id="content" style="display: none;">
+    <nav class="nav fade-in delay-1">
+        <ul class="menu">
+            <li><a href="#one" data-translate="info">Infos</a></li>
+            <li><a href="#two" data-translate="projet">Projet</a></li>
+            <li><a href="#three" data-translate="contact">Contact</a></li>
+        </ul>
+
+        <div class="lang">
+            <select name="" id="language-select">
+                <option value="fr">🇫🇷 Français</option>
+                <option value="en">🇺🇸 English</option>
+            </select>
+        </div>
+    </nav>
+
+    <script src="js/lang_index.js"></script>
+    <script src="js/hide_page.js"></script>
+
+    <section id="one" class="fade-in delay-2">
+        <div class="container fade-in delay-3">
+            <div id="welcome" class="fade-in delay-4">
+                <p>
+                    <span class="regular" data-translate="bienvenue">Bienvenue je suis </span> 
+                    <span class="black">Denis.</span> 
+                    <br> 
+                    <span class="regular" data-translate="jesuis">Je suis </span> 
+                    <span class="black" data-translate="etudiant">étudiant en informatique.</span>
+                </p>
+
+                <div class="inline-container fade-in delay-5">
+                    <p>📍</p>
+                    <p class="light" data-translate="actuellement">
+                        Actuellement en 
+                        <span class="semibold" data-translate="but">BUT Informatique</span> 
+                        à l’
+                        <span class="semibold" data-translate="iut">IUT de Villetaneuse</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="media fade-in delay-6">
+                <a href="https://github.com/DenisVuong" target="_blank">
+                    <img class="social" src="img/github-brands.svg" alt="github" width="40">
+                </a>
+
+                <a href="https://www.linkedin.com/in/denisvuong/" target="_blank">
+                    <img class="social" src="img/linkedin-brands.svg" alt="linkedin" width="40">
+                </a>
+
+                <a href="img/DENIS VUONG-last.pdf" target="_blank">
+                    <img class="social" src="img/file-solid-modified.svg" alt="file_cv" width="40">
+                </a>
+            </div>
+        </div>
+
+        <div id="desc" class="fade-in delay-7">
+            <p class="titleTxt" data-translate="Qui">Qui je suis ? 🙎‍♂️</p>
+            <br>
+            <p class="simpleTxt" data-translate="textlong">
+                Denis Vuong, né en 2005 à Gonesse, en France. Étudiant en informatique, j’aspire à devenir un développeur capable de concevoir des logiciels innovants pour répondre aux enjeux technologiques de demain. 
+                <br><br>
+                Optant pour des approches analytiques et méthodiques, je cherche à améliorer mes compétences en programmation afin de créer des solutions performantes et adaptées aux besoins clients. 
+                <br><br>
+                Je m’investis pleinement dans mon apprentissage pour transformer ma passion en expertise et avoir un réel impact dans le domaine du développement logiciel.
+            </p>
+            <br>
+    </div>
+    
+    <div class="container-sections">
+        <section class="parcours">
+        <div class="edu-section">
+        <h2 class="edu-title" data-translate="education">Education</h2>
+        <div class="edu-timeline">
+            <div class="edu-item">
+                <div class="edu-left">
+                    <div class="edu-date">2023-2026</div>
+                    <p class="edu-location">Sorbonne Paris Nord<br>Villetaneuse, France</p>
+                </div>
+                <div class="edu-middle">
+                    <div class="edu-circle"></div>
+                </div>
+                <div class="edu-right">
+                    <h3 class="edu-degree" data-translate="but">BUT INFORMATIQUE</h3>
+                    <p class="edu-desc" data-translate="parcours">Parcours réalisation d’applications : conception, développement, validation</p>
+                    <p class="edu-status" data-translate="premiere">- Première année validée ✅</p>
+                </div>
+            </div>
+    
+            <div class="edu-item">
+                <div class="edu-left">
+                    <div class="edu-date">2020-2023</div>
+                    <p class="edu-location" data-translate="lyceeloc">Lycée René Cassin<br>Gonesse, France</p>
+                </div>
+                <div class="edu-middle">
+                    <div class="edu-circle"></div>
+                </div>
+                <div class="edu-right">
+                    <h3 class="edu-degree" data-translate="bac">Bac Général</h3>
+                    <p class="edu-desc" data-translate="mention">Bac générale mention assez bien</p>
+                    <p class="edu-spec" data-translate="spe">Spécialités :</p>
+                    <ul class="edu-list">
+                        <li data-translate="mathFR">Mathématiques</li>
+                        <li data-translate="NSIFR">Numérique Science Informatique</li>
+                        <li data-translate="anglais">LLCER Anglais</li>
+                    </ul>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+        </section>
+        <section class="skills">
+        <div class="skills-section">
+    
+    <div class="category">
+        <h2 data-translate="devFR">💻 Développement & Programmation</h2>
+        <div class="skills">
+            <div class="skill">
+                <img src="img/logoSkills/logo skill w/python-brands.png" alt="Python">
+                <span>Python</span>
+            </div>
+            <div class="skill">
+                <img src="img/logoSkills/logo skill w/html5-brands.png" alt="HTML">
+                <span>HTML</span>
+            </div>
+            <div class="skill">
+                <img src="img/logoSkills/logo skill w/css3-alt-brands.png" alt="CSS">
+                <span>CSS</span>
+            </div>
+            <div class="skill">
+                <img src="img/logoSkills/logo skill w/js-brands.png">
+                <span>JS</span>
+            </div>
+            <div class="skill">
+                <img src="img/logoSkills/logo skill w/java-brands.png" alt="Java">
+                <span>Java</span>
+            </div>
+            <div class="skill">
+                <img src="img/logoSkills/logo skill w/database-solid.png" alt="SQL">
+                <span>SQL</span>
+            </div>
+            <div class="skill">
+                <img src="img/logoSkills/logo skill w/Official PHP Logo 1.png" alt="PHP">
+                <span>PHP</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="category">
+        <h2 data-translate="outilFR">🛠 Outils & Environnements de Développement</h2>
+        <div class="skills">
+            <div class="skill">
+                <img src="img/logoSkills/logo skill w/mysql-logo-svgrepo-com.png" alt="MySQL">
+                <span>MySQL</span>
+            </div>
+            <div class="skill">
+                <img src="img/logoSkills/logo skill w/postgresql-logo-svgrepo-com.png" alt="PGSQL">
+                <span>PGSQL</span>
+            </div>
+            <div class="skill">
+                <img src="img/logoSkills/logo skill w/vscode-alt 2.png" alt="VS code">
+                <span>VS Code</span>
+            </div>
+            <div class="skill">
+                <img src="img/logoSkills/logo skill w/IntelliJ_IDEA_icon.png" alt="IntelliJ">
+                <span>IntelliJ</span>   
+            </div>
+        </div>
+    </div>
+    
+    <div class="category">
+        <h2 data-translate="VirtualFR">🖥 Virtualisation & Réseaux</h2>
+        <div class="skills">
+            <div class="skill">
+                <img src="img/logoSkills/logo skill w/VirtualBox_2024_Logo.png" alt="">
+                <span>Virtual Box</span>
+            </div>
+            <div class="skill">
+                <img src="img/logoSkills/logo skill w/1740639060Marionnet_logo.png-new-Marionnet_logo 2-Photoroom.png" alt="">
+                <span>Marionnet</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="category">
+        <h2 data-translate="AutoFR">⚙️ Automatisation & Gestion</h2>
+        <div class="skills">
+            <div class="skill">
+                <img src="img/logoSkills/logo skill w/microsoft-power-automate-seeklogo 2.png" alt="">   
+                <span>Power Automate</span>
+            </div>
+            <div class="skill">
+                <img src="img/logoSkills/logo skill w/odoo_logo.png" alt="">
+                <span>Odoo</span>   
+            </div>
+        </div>
+    </div>
+    </div>
+        </section>
+    </div>
+    </section>
+    
+    <section id="two">
+    
+        <h1 data-translate="projet">Mes projets</h1>
+    
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup1()">&times;</div>
+                <h3 data-translate="ressource">Ressource</h3>
+                <a href="https://drive.google.com/drive/folders/115t6tIIO0LY9fm__kd17jpdLUv7rRiKK?usp=sharing" target="_blank" class="lien" data-translate="livrable" >Lien vers livrables</a>
+                <div class="appli-pop">
+                    <div class="logos">
+                        <img src="img/logoSkills/logo skill w/html5-brands.png" alt="HTML">
+                        <img src="img/logoSkills/logo skill w/css3-alt-brands.png" alt="CSS">
+                        <img src="img/logoSkills/logo skill w/js-brands.png" alt="JavaScript">
+                        <img src="img/Adobe_Photoshop_CC_icon 1.png" alt="Photoshop">
+                    </div>
+                    <a href="https://lasryy.github.io/SAE-Evenement/index.html" class="button" target="_blank" data-translate="site">Lien vers projet</a>
+                </div>
+                
+                
+        </div>
+        </div>
+        
+        <div class="popup" id="popup-2">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup2()">&times;</div>
+                <h3 data-translate="ressource">Ressource</h3>
+                <a href="https://docs.google.com/document/d/1qZXFzizQnRAWJFIY3sCff7q0ZqlmZHe8V9JvwTK3udU/edit?usp=sharing" target="_blank" class="lien" data-translate="rendu">Lien vers rendu du projet</a>
+                
+                <div class="appli-pop">
+                    <div class="logos">
+                        <img src="img/logoSkills/logo skill w/html5-brands.png" alt="HTML">
+                        <img src="img/logoSkills/logo skill w/css3-alt-brands.png" alt="CSS">
+                        <img src="img/logoSkills/logo skill w/js-brands.png" alt="JavaScript">
+                        <img src="img/logoSkills/logo skill w/Official PHP Logo 1.png" alt="PHP">
+                        <img src="img/logoSkills/logo skill w/database-solid.png" alt="SQL">
+                        <img src="img/Figma 1.png" alt="Figma"> 
+                    </div>
+                    <a href="https://github.com/LiOlivier/SAE-S3.01" class="button" target="_blank" data-translate="site">Lien vers projet</a>
+            </div>
+        </div>
+        </div>
+    
+        
+        <div class="popup" id="popup-3">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup3()">&times;</div>
+                <h3 data-translate="ressource">Ressource</h3>
+                
+                <a href="https://docs.google.com/document/d/1qHMQfRwwmcNg4ucC908_pRoQIK8UDptHsF28LoMn0OE/edit?usp=sharing" target="_blank" class="lien" data-translate="personaFR">Lien vers persona</a>
+                <div class="appli-pop">
+                    <div class="logos">
+                        <img src="img/Figma 1.png" alt="Figma">
+                        <img src="img/Adobe_Photoshop_CC_icon 1.png" alt="Photoshop">
+                    </div>
+                    <a href="https://www.figma.com/design/seqVDVidqn9ipsRx940b7A/Music-Bar?node-id=0-1&t=l4da35Pc3jl8U4Dy-1" class="button" target="_blank" data-translate="site">Lien vers projet</a>
+            </div>
+        </div>
+        </div>
+        
+        
+        <!-----> 
+        
+        <div class="container_card">
+        
+            <div class="card">
+                <img class="card-img" src="img/Affiche_Concours_d_élégance 1.png" alt="Concours d'élégance">
+                <h2 data-translate="organisationFR">Organisation d'un travail d'equipe</h2>
+                <p data-translate="txtorganisationFR"> Création d’un site web pour un événement culturel en 2025, avec intégration de médias et accessibilité en anglais. Ce projet a sollicité ma participation sur le terrain, j'ai dû interviewer des participants pour enrichir le contenu du site. Cela a parmi le développement de compétences en travail d’équipe, gestion de projet, communication et journalisme.
+                    </p>
+                <button onclick="togglePopup1()" data-translate="voirPlus">Voir plus  →</button>
+            </div>
+        
+            <div class="card">
+                <img class="card-img" src="img/image 2.png" alt="Site gestion de stage">
+                <h2 data-translate="devappFR">Développement d'une application</h2>
+                <p data-translate="devtxtFR">Développement en équipe d’un site web pour la gestion des stages à l’université, avec intégration d’une base de données et d’un système de cryptage. Pour ce projet une collaboration efficace était nécessaire pour renforcer nos compétences en travail d’équipe, de développement web et sécurité informatique.</p>
+                <button onclick="togglePopup2()" data-translate="voirPlus">Voir plus  →</button>
+            </div>
+        
+            <div class="card">
+                <img class="card-img" src="img/Capture d’écran 2025-03-05 à 10.49.22 1.png" alt="site bar jazz">
+                <h2 data-translate="recueil">Recueil de besoins</h2>
+                <p data-translate="recueiltxtFR">Mise en situation d'un échange avec un client fictif afin de recueillir les besoins du site afin de réaliser une maquette sur Figma et ajuster selon les retours client.</p>
+                <button onclick="togglePopup3()" data-translate="voirPlus">Voir plus  →</button>
+            </div>
+        
+        </div>
+        
+        <script src="js/popup.js"></script>
+        
+        
+        
+        </section>
+    
+    <section id="three" >
+    
+    <div class=media-h>
+    
         <a href="https://github.com/DenisVuong" target="_blank">
             <img class="social" src="img/github-brands.svg" alt="github" width="40">
         </a>
-
+    
         <a href="https://www.linkedin.com/in/denisvuong/" target="_blank">
             <img class="social" src="img/linkedin-brands.svg" alt="linkedin" width="40">
         </a>
-
+    
         <a href="img/DENIS VUONG-last.pdf" target="_blank">
             <img class="social" src="img/file-solid-modified.svg" alt="file_cv" width="40">
         </a>
-
-    </div>
-</div>
-
-
-<div id="desc">
-    <p class="titleTxt" data-translate="Qui">Qui je suis ? 🙎‍♂️</p>
-    <br>
-    <p class="simpleTxt" data-translate="textlong">Denis Vuong, né en 2005 à Gonesse, en France. Étudiant en informatique, j’aspire à devenir un développeur capable de concevoir des logiciels innovants pour répondre aux enjeux technologiques de demain. <br><br>
-
-    Optant pour des approches analytiques et méthodiques, je cherche à ameliorer mes compétences en programmation afin de créer des solutions performantes et adaptées aux besoins clients. 
-    <br><br>
-
-    Je m’investis pleinement dans mon apprentissage pour transformer ma passion en expertise et avoir un réel impact dans le domaine du développement logiciel.</p>
-    
-    <br>
-</div>
-
-<div class="container-sections">
-    <section class="parcours">
-    <div class="edu-section">
-    <h2 class="edu-title" data-translate="education">Education</h2>
-    <div class="edu-timeline">
-        <div class="edu-item">
-            <div class="edu-left">
-                <div class="edu-date">2023-2026</div>
-                <p class="edu-location">Sorbonne Paris Nord<br>Villetaneuse, France</p>
-            </div>
-            <div class="edu-middle">
-                <div class="edu-circle"></div>
-            </div>
-            <div class="edu-right">
-                <h3 class="edu-degree" data-translate="but">BUT INFORMATIQUE</h3>
-                <p class="edu-desc" data-translate="parcours">Parcours réalisation d’applications : conception, développement, validation</p>
-                <p class="edu-status" data-translate="premiere">- Première année validée ✅</p>
-            </div>
-        </div>
-
-        <div class="edu-item">
-            <div class="edu-left">
-                <div class="edu-date">2020-2023</div>
-                <p class="edu-location" data-translate="lyceeloc">Lycée René Cassin<br>Gonesse, France</p>
-            </div>
-            <div class="edu-middle">
-                <div class="edu-circle"></div>
-            </div>
-            <div class="edu-right">
-                <h3 class="edu-degree" data-translate="bac">Bac Général</h3>
-                <p class="edu-desc" data-translate="mention">Bac générale mention assez bien</p>
-                <p class="edu-spec" data-translate="spe">Spécialités :</p>
-                <ul class="edu-list">
-                    <li data-translate="mathFR">Mathématiques</li>
-                    <li data-translate="NSIFR">Numérique Science Informatique</li>
-                    <li data-translate="anglais">LLCER Anglais</li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-    </section>
-    <section class="skills">
-    <div class="skills-section">
-
-<div class="category">
-    <h2 data-translate="devFR">💻 Développement & Programmation</h2>
-    <div class="skills">
-        <div class="skill">
-            <img src="img/logoSkills/logo skill w/python-brands.png" alt="Python">
-            <span>Python</span>
-        </div>
-        <div class="skill">
-            <img src="img/logoSkills/logo skill w/html5-brands.png" alt="HTML">
-            <span>HTML</span>
-        </div>
-        <div class="skill">
-            <img src="img/logoSkills/logo skill w/css3-alt-brands.png" alt="CSS">
-            <span>CSS</span>
-        </div>
-        <div class="skill">
-            <img src="img/logoSkills/logo skill w/js-brands.png">
-            <span>JS</span>
-        </div>
-        <div class="skill">
-            <img src="img/logoSkills/logo skill w/java-brands.png" alt="Java">
-            <span>Java</span>
-        </div>
-        <div class="skill">
-            <img src="img/logoSkills/logo skill w/database-solid.png" alt="SQL">
-            <span>SQL</span>
-        </div>
-        <div class="skill">
-            <img src="img/logoSkills/logo skill w/Official PHP Logo 1.png" alt="PHP">
-            <span>PHP</span>
-        </div>
-    </div>
-</div>
-
-<div class="category">
-    <h2 data-translate="outilFR">🛠 Outils & Environnements de Développement</h2>
-    <div class="skills">
-        <div class="skill">
-            <img src="img/logoSkills/logo skill w/mysql-logo-svgrepo-com.png" alt="MySQL">
-            <span>MySQL</span>
-        </div>
-        <div class="skill">
-            <img src="img/logoSkills/logo skill w/postgresql-logo-svgrepo-com.png" alt="PGSQL">
-            <span>PGSQL</span>
-        </div>
-        <div class="skill">
-            <img src="img/logoSkills/logo skill w/vscode-alt 2.png" alt="VS code">
-            <span>VS Code</span>
-        </div>
-        <div class="skill">
-            <img src="img/logoSkills/logo skill w/IntelliJ_IDEA_icon.png" alt="IntelliJ">
-            <span>IntelliJ</span>   
-        </div>
-    </div>
-</div>
-
-<div class="category">
-    <h2 data-translate="VirtualFR">🖥 Virtualisation & Réseaux</h2>
-    <div class="skills">
-        <div class="skill">
-            <img src="img/logoSkills/logo skill w/VirtualBox_2024_Logo.png" alt="">
-            <span>Virtual Box</span>
-        </div>
-        <div class="skill">
-            <img src="img/logoSkills/logo skill w/1740639060Marionnet_logo.png-new-Marionnet_logo 2-Photoroom.png" alt="">
-            <span>Marionnet</span>
-        </div>
-    </div>
-</div>
-
-<div class="category">
-    <h2 data-translate="AutoFR">⚙️ Automatisation & Gestion</h2>
-    <div class="skills">
-        <div class="skill">
-            <img src="img/logoSkills/logo skill w/microsoft-power-automate-seeklogo 2.png" alt="">   
-            <span>Power Automate</span>
-        </div>
-        <div class="skill">
-            <img src="img/logoSkills/logo skill w/odoo_logo.png" alt="">
-            <span>Odoo</span>   
-        </div>
-    </div>
-</div>
-</div>
-    </section>
-</div>
-</section>
-
-<section id="two">
-
-    <h1 data-translate="projet">Mes projets</h1>
-
-    <div class="popup" id="popup-1">
-        <div class="overlay"></div>
-        <div class="content">
-            <div class="close-btn" onclick="togglePopup1()">&times;</div>
-            <h3 data-translate="ressource">Ressource</h3>
-            <a href="https://drive.google.com/drive/folders/115t6tIIO0LY9fm__kd17jpdLUv7rRiKK?usp=sharing" target="_blank" class="lien" data-translate="livrable" >Lien vers livrables</a>
-            <div class="appli-pop">
-                <div class="logos">
-                    <img src="img/logoSkills/logo skill w/html5-brands.png" alt="HTML">
-                    <img src="img/logoSkills/logo skill w/css3-alt-brands.png" alt="CSS">
-                    <img src="img/logoSkills/logo skill w/js-brands.png" alt="JavaScript">
-                    <img src="img/Adobe_Photoshop_CC_icon 1.png" alt="Photoshop">
-                </div>
-                <a href="https://lasryy.github.io/SAE-Evenement/index.html" class="button" target="_blank" data-translate="site">Lien vers projet</a>
-            </div>
-            
-            
-    </div>
-    </div>
-    
-    <div class="popup" id="popup-2">
-        <div class="overlay"></div>
-        <div class="content">
-            <div class="close-btn" onclick="togglePopup2()">&times;</div>
-            <h3 data-translate="ressource">Ressource</h3>
-            <a href="https://docs.google.com/document/d/1qZXFzizQnRAWJFIY3sCff7q0ZqlmZHe8V9JvwTK3udU/edit?usp=sharing" target="_blank" class="lien" data-translate="rendu">Lien vers rendu du projet</a>
-            
-            <div class="appli-pop">
-                <div class="logos">
-                    <img src="img/logoSkills/logo skill w/html5-brands.png" alt="HTML">
-                    <img src="img/logoSkills/logo skill w/css3-alt-brands.png" alt="CSS">
-                    <img src="img/logoSkills/logo skill w/js-brands.png" alt="JavaScript">
-                    <img src="img/logoSkills/logo skill w/Official PHP Logo 1.png" alt="PHP">
-                    <img src="img/logoSkills/logo skill w/database-solid.png" alt="SQL">
-                    <img src="img/Figma 1.png" alt="Figma"> 
-                </div>
-                <a href="https://github.com/LiOlivier/SAE-S3.01" class="button" target="_blank" data-translate="site">Lien vers projet</a>
-        </div>
-    </div>
-    </div>
-
-    
-    <div class="popup" id="popup-3">
-        <div class="overlay"></div>
-        <div class="content">
-            <div class="close-btn" onclick="togglePopup3()">&times;</div>
-            <h3 data-translate="ressource">Ressource</h3>
-            
-            <a href="https://docs.google.com/document/d/1qHMQfRwwmcNg4ucC908_pRoQIK8UDptHsF28LoMn0OE/edit?usp=sharing" target="_blank" class="lien" data-translate="personaFR">Lien vers persona</a>
-            <div class="appli-pop">
-                <div class="logos">
-                    <img src="img/Figma 1.png" alt="Figma">
-                    <img src="img/Adobe_Photoshop_CC_icon 1.png" alt="Photoshop">
-                </div>
-                <a href="https://www.figma.com/design/seqVDVidqn9ipsRx940b7A/Music-Bar?node-id=0-1&t=l4da35Pc3jl8U4Dy-1" class="button" target="_blank" data-translate="site">Lien vers projet</a>
-        </div>
-    </div>
-    </div>
-    
-    
-    <!-----> 
-    
-    <div class="container_card">
-    
-        <div class="card">
-            <img class="card-img" src="img/Affiche_Concours_d_élégance 1.png" alt="Concours d'élégance">
-            <h2 data-translate="organisationFR">Organisation d'un travail d'equipe</h2>
-            <p data-translate="txtorganisationFR"> Création d’un site web pour un événement culturel en 2025, avec intégration de médias et accessibilité en anglais. Ce projet a sollicité ma participation sur le terrain, j'ai dû interviewer des participants pour enrichir le contenu du site. Cela a parmi le développement de compétences en travail d’équipe, gestion de projet, communication et journalisme.
-                </p>
-            <button onclick="togglePopup1()" data-translate="voirPlus">Voir plus  →</button>
-        </div>
-    
-        <div class="card">
-            <img class="card-img" src="img/image 2.png" alt="Site gestion de stage">
-            <h2 data-translate="devappFR">Développement d'une application</h2>
-            <p data-translate="devtxtFR">Développement en équipe d’un site web pour la gestion des stages à l’université, avec intégration d’une base de données et d’un système de cryptage. Pour ce projet une collaboration efficace était nécessaire pour renforcer nos compétences en travail d’équipe, de développement web et sécurité informatique.</p>
-            <button onclick="togglePopup2()" data-translate="voirPlus">Voir plus  →</button>
-        </div>
-    
-        <div class="card">
-            <img class="card-img" src="img/Capture d’écran 2025-03-05 à 10.49.22 1.png" alt="site bar jazz">
-            <h2 data-translate="recueil">Recueil de besoins</h2>
-            <p data-translate="recueiltxtFR">Mise en situation d'un échange avec un client fictif afin de recueillir les besoins du site afin de réaliser une maquette sur Figma et ajuster selon les retours client.</p>
-            <button onclick="togglePopup3()" data-translate="voirPlus">Voir plus  →</button>
-        </div>
     
     </div>
     
-    <script src="js/popup.js"></script>
-    
-    
+    <div class="Mailcontainer">
+        <h1 data-translate="formulaire">Formulaire de contact</h1>
+        <form action="https://formsubmit.co/vuong.denis.p@gmail.com" method="POST" class="form">
+            <input type="text" name="Name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="Message" placeholder="Message" required></textarea>
+            <button type="submit" data-translate="envoyer">Envoyer</button>
+        </form>
+    </div>
     
     </section>
-
-<section id="three" >
-
-<div class=media-h>
-
-    <a href="https://github.com/DenisVuong" target="_blank">
-        <img class="social" src="img/github-brands.svg" alt="github" width="40">
-    </a>
-
-    <a href="https://www.linkedin.com/in/denisvuong/" target="_blank">
-        <img class="social" src="img/linkedin-brands.svg" alt="linkedin" width="40">
-    </a>
-
-    <a href="img/DENIS VUONG-last.pdf" target="_blank">
-        <img class="social" src="img/file-solid-modified.svg" alt="file_cv" width="40">
-    </a>
-
+    
 </div>
 
-<div class="Mailcontainer">
-    <h1 data-translate="formulaire">Formulaire de contact</h1>
-    <form action="https://formsubmit.co/vuong.denis.p@gmail.com" method="POST" class="form">
-        <input type="text" name="Name" placeholder="Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="Message" placeholder="Message" required></textarea>
-        <button type="submit" data-translate="envoyer">Envoyer</button>
-    </form>
-</div>
-
-</section>
-
+<script src="js/loading.js">
+</script>   
 </body>
 </html>
