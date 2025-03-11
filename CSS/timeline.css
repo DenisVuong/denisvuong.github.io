@@ -1,10 +1,10 @@
 .edu-section {
     padding-top: 100px;
-    width: 100%;
+    width: 80%;
     max-width: 1000px;
     margin: 50px auto;
     color: white;
-    font-family: "Josefin Sans",sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     padding-bottom: 100px;
 }
 
@@ -14,12 +14,19 @@
     font-weight: bold;
 }
 
-
 .edu-timeline {
     position: relative;
     margin: 50px auto;
+    width: 80%;
+    max-width: 800px;
 }
 
+@media screen and (max-width: 768px) {
+    .edu-timeline {
+        width: 90%;
+        max-width: none;
+    }
+}
 
 .edu-middle {
     position: absolute;
@@ -31,7 +38,6 @@
     transform: translateX(-50%);
 }
 
-
 .edu-item {
     display: flex;
     align-items: flex-start;
@@ -39,16 +45,19 @@
     position: relative;
 }
 
-
 .edu-left, .edu-right {
     width: 45%;
 }
 
-.edu-left{
+.edu-left {
     padding-top: 35px;
     text-align: right;
+    margin-left: -10px;
 }
 
+.edu-right{
+    margin-left: 40px;
+}
 
 .edu-date {
     font-size: 22px;
@@ -58,15 +67,15 @@
 .edu-location {
     font-size: 16px;
     line-height: 1.5;
+    font-weight: 400;
+    font-size: 15px;
 }
-
 
 .edu-degree {
     font-size: 28px;
     font-weight: bold;
     position: relative;
 }
-
 
 .edu-circle {
     width: 20px;
@@ -78,14 +87,34 @@
     left: 50%;
     top: 17%;
     transform: translate(-50%, -50%);
+    max-width: none;
 }
 
-.edu-desc{
+.edu-desc {
     font-size: 16px;
     width: 90%;
 }
 
-.edu-location{
-    font-weight: 400;
-    font-size: 15px;
+
+@media screen and (max-width: 768px) {
+    .edu-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .edu-left, .edu-right {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .edu-middle {
+        display: none;
+    }
+
+    .edu-desc, .edu-degree, .edu-location, .edu-date {
+        width: 100%;
+        text-align: center;
+    }
 }

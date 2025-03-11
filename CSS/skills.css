@@ -4,15 +4,12 @@
     margin: 50px auto;
     padding: 30px;
     background: rgba(255, 255, 255, 0.09);
-    backdrop-filter: blur(13.5px); 
+    backdrop-filter: blur(13.5px);
     border-radius: 15px;
-    box-shadow: 
-        0px 4px 8.9px 3px rgba(0, 0, 0, 0.09),
-        inset 0px 4px 7.5px 0px rgba(0, 0, 0, 0.25); 
+    box-shadow: 0px 4px 8.9px 3px rgba(0, 0, 0, 0.09), inset 0px 4px 7.5px 0px rgba(0, 0, 0, 0.25);
     color: white;
     font-family: 'Lexend Zetta', sans-serif;
 }
-
 
 .category {
     margin-bottom: 30px;
@@ -30,7 +27,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    width: 800px;
+    width: 100%;
+    justify-content: flex-start;
 }
 
 .skill {
@@ -50,11 +48,27 @@
     object-fit: contain;
 }
 
-
 .skill span {
     margin-top: 8px;
     font-size: 14px;
     text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+    .skills {
+        gap: 10px;
+    }
 
+    .skill {
+        width: 80px;
+        height: 80px;
+    }
+
+    .skill img {
+        max-height: 40px;
+    }
+
+    .skill span {
+        font-size: 12px;
+    }
+}

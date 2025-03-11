@@ -23,24 +23,18 @@ html {
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), 
-                url('../img/BGBlack.jpg') no-repeat center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('../img/BGBlack.jpg') no-repeat center/cover;
     background-attachment: fixed;
     height: 100vh;
     margin: 0;
     padding: 0;
     padding-top: 80px;
     color: white;
+    overflow-x: hidden;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 200px;
+* {
+    max-width: 100%;
 }
 
 .nav {
@@ -68,18 +62,32 @@ body {
     padding: 0px 40px;
 }
 
+.menu a {
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu a:hover {
+    color: #a3a3a3;
+    transform: scale(1.1);
+}
+
 .lang {
     position: absolute;
-    right: 20px; 
+    right: 20px;
 }
 
 .lang select {
-    background: rgba(255, 255, 255, 0.15); 
-    backdrop-filter: blur(10px); 
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
     border: none;
     color: white;
     padding: 10px;
-    font-family:"Josefin Sans",sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 12px;
     border-radius: 5px;
     cursor: pointer;
@@ -96,21 +104,32 @@ body {
     background: rgba(255, 255, 255, 0.3);
 }
 
-
-
-
-.menu a {
-    text-decoration: none;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
-    color: white;
-    font-size: 16px;
-    transition: color 0.3s ease, transform 0.3s ease;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 200px;
 }
 
-.menu a:hover {
-    color: #a3a3a3;
-    transform: scale(1.1);
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+
+    #welcome {
+        width: 90%;
+        padding: 0;
+    }
+
+    .media {
+        width: 100px;
+        padding: 20px;
+    }
 }
 
 #welcome {
@@ -167,57 +186,50 @@ body {
 
 .simpleTxt {
     text-align: left;
-    font-family: "Josefin Sans",sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     font-size: 20px;
 }
 
-
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        gap: 50px;
-        text-align: center;
-    }
-
-    #welcome {
-        width: 90%;
-        padding: 0;
-    }
-
-    .media {
-        width: 100px;
-        padding: 20px;
-    }
-}
-
 .container-sections {
     display: flex;
-    justify-content: space-between; 
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     margin: 50px auto;
-    gap: 300px;
+    gap: 300px; /* grand espace ici */
     padding-bottom: 200px;
-}
+  }
+  
+  .parcours {
+    width: 48%;
+    padding-right: 0;
+  }
+  
+  .skills-section {
+    width: 80%; /* ici la largeur de la section skills */
+    max-width: 1000px;
+  }
+  
+  
 
+@media screen and (max-width: 1024px) {
+    .container-sections {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
 
-.parcours {
-    margin-left: 100px;
-    width: 30%;
+    .parcours, .skills {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 .skills{
-    width:80%;
+    width: 70%;
 }
 
-@media screen and (max-width: 768px) {
-    .container-sections {
-        flex-direction: column;
-        gap: 30px;
-    }
-}
-
-#three{
+#three {
     padding-bottom: 200px;
 }
