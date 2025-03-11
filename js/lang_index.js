@@ -39,7 +39,7 @@ const translation = {
         AutoFR:"⚙️ Automatisation & Gestion",
 
         //card
-
+        projet:"Mes projets",
         ressource:"Ressources", // RESSOURCES
         livrable:"Lien vers livrables",
         site:"Lien vers projet", // LIEN VERS PROJET
@@ -68,7 +68,7 @@ const translation = {
 
         // Welcome
         bienvenue: "Welcome, I'm ",
-        jesuis: "I am ",
+        jesuis: "I'm ",
         etudiant: "a computer science student",
 
         // Actuellement a...
@@ -100,6 +100,7 @@ const translation = {
         AutoFR: "⚙️ Automation & Management",
 
         // Card
+        projet:"My projects",
         ressource: "Resources",
         livrable: "Link to deliverables",
         site: "Project link",
