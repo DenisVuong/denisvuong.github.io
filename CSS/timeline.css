@@ -97,24 +97,35 @@
 
 
 @media screen and (max-width: 768px) {
+
     .edu-item {
-        flex-direction: column;
+        flex-direction: column; /* On passe en colonne */
         align-items: center;
         text-align: center;
+        position: relative; /* Pour positionner la ligne */
+        padding: 20px 0; /* Un peu d'espace autour */
     }
 
     .edu-left, .edu-right {
-        width: 100%;
-        padding: 0;
-        text-align: center;
+        width: 100%; /* Pleine largeur */
+        padding: 0 10px; /* Un petit padding */
+        margin-bottom: 15px; /* Espacer les blocs */
     }
 
+    /* Remettre la ligne centrale si besoin */
     .edu-middle {
-        display: none;
+        display: block;
+        position: absolute;
+        left: 50%; /* Centrée */
+        top: 0;
+        bottom: 0;
+        width: 2px; /* Largeur de la ligne */
+        background: white;
+        transform: translateX(-50%); /* Parfaitement au centre */
     }
 
+    /* Ajuster les textes pour qu'ils ne soient pas collés */
     .edu-desc, .edu-degree, .edu-location, .edu-date {
-        width: 100%;
-        text-align: center;
+        margin: 5px 0; /* Espacement vertical */
     }
 }

@@ -2,7 +2,7 @@ const startLoadingTime = Date.now();
 
 window.addEventListener('load', function () {
     const elapsedTime = Date.now() - startLoadingTime;
-    const minLoadingTime = 4000; 
+    const minLoadingTime = 1000; 
     const remainingTime = minLoadingTime - elapsedTime;
     const delay = remainingTime > 0 ? remainingTime : 0;
 
