@@ -251,15 +251,37 @@ body.loading {
   
 
 @media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+    #welcome {
+        width: 90%;
+        padding: 0;
+    }
+    .media {
+        width: 100px;
+        padding: 20px;
+    }
     .container-sections {
         flex-direction: column;
         gap: 50px;
         align-items: center;
     }
-
     .parcours, .skills {
         width: 100%;
         margin: 0 auto;
+    }
+    .skills {
+        width: 90%;
+    }
+    #desc {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    h1 {
+        font-size: 32px;
     }
 }
 

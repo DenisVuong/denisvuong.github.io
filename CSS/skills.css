@@ -54,6 +54,22 @@
     text-align: center;
 }
 
+@media screen and (max-width: 1024px) {
+    .skills {
+        gap: 10px;
+    }
+    .skill {
+        width: 80px;
+        height: 80px;
+    }
+    .skill img {
+        max-height: 40px;
+    }
+    .skill span {
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .skills {
         gap: 10px;
