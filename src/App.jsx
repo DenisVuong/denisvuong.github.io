@@ -190,9 +190,9 @@ export default function App() {
 
               {/* Image Placeholder - 1/3 width */}
               <div className="md:col-span-1 flex justify-center items-center">
-                <div className="w-80 h-80 rounded-full bg-white/5 border border-white/10 flex items-center justify-center relative overflow-hidden group shadow-lg shadow-white/5">
+                {/* <div className="w-80 h-80 rounded-full bg-white/5 border border-white/10 flex items-center justify-center relative overflow-hidden group shadow-lg shadow-white/5">
                   <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

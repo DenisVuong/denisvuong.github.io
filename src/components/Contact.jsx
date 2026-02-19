@@ -10,42 +10,42 @@ export default function Contact() {
                     N'hésitez pas à me contacter pour discuter de projets, d'opportunités ou simplement pour échanger !
                 </p>
 
-                <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
+                <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 mb-8">
                     <a
                         href="mailto:vuong.denis.p@gmail.com"
-                        className="group flex flex-col items-center gap-4 text-white/70 hover:text-white transition-colors duration-300"
+                        className="relative group flex flex-col items-center gap-4 text-white/70 hover:text-white transition-colors duration-300"
                         aria-label="Email"
                     >
                         <div className="p-4 rounded-full bg-white/5 group-hover:bg-white/10 transition-colors duration-300 ring-1 ring-white/10 group-hover:ring-white/30">
                             <FaEnvelope className="text-4xl" />
                         </div>
-                        <span className="text-sm font-light tracking-wider opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -bottom-8">Email</span>
+                        <span className="text-sm font-light tracking-wider opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -bottom-6">Email</span>
                     </a>
 
                     <a
                         href="https://www.linkedin.com/in/denisvuong/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group flex flex-col items-center gap-4 text-white/70 hover:text-white hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] transition-all duration-300"
+                        className="relative group flex flex-col items-center gap-4 text-white/70 hover:text-white transition-all duration-300"
                         aria-label="LinkedIn"
                     >
                         <div className="p-4 rounded-full bg-white/5 group-hover:bg-white/10 transition-colors duration-300 ring-1 ring-white/10 group-hover:ring-white/30">
                             <FaLinkedin className="text-4xl" />
                         </div>
-                        <span className="text-sm font-light tracking-wider opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -bottom-8">LinkedIn</span>
+                        <span className="text-sm font-light tracking-wider opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -bottom-6">LinkedIn</span>
                     </a>
 
                     <a
                         href="https://github.com/DenisVuong"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group flex flex-col items-center gap-4 text-white/70 hover:text-white transition-colors duration-300"
+                        className="relative group flex flex-col items-center gap-4 text-white/70 hover:text-white transition-colors duration-300"
                         aria-label="GitHub"
                     >
                         <div className="p-4 rounded-full bg-white/5 group-hover:bg-white/10 transition-colors duration-300 ring-1 ring-white/10 group-hover:ring-white/30">
                             <FaGithub className="text-4xl" />
                         </div>
-                        <span className="text-sm font-light tracking-wider opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -bottom-8">GitHub</span>
+                        <span className="text-sm font-light tracking-wider opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -bottom-6">GitHub</span>
                     </a>
                 </div>
             </div>
