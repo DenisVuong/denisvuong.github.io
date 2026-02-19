@@ -13,6 +13,11 @@ import Grainient from './Grainient';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+import imgLinkTrack from './img/LinkTrack.png';
+import imgDexia from './img/dexia logo.png';
+import imgDexiaScreen from './img/dexia_screen.png';
+import imgSaePhp from './img/saephp.png';
+
 gsap.registerPlugin(ScrollTrigger);
 
 const handleAnimationComplete = () => {
@@ -201,13 +206,13 @@ export default function App() {
         <Section id="projects" className="relative">
           <TechBackground />
           <div className="container mx-auto px-4 h-full flex flex-col justify-center relative z-10" ref={projectsRef}>
-            <h2 className="text-4xl font-bold mb-12 text-center">Featured Work</h2>
+            <h2 className="text-4xl font-bold mb-12 text-center">Projets</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <ProjectCard
                 title="LinkTrack (projet en cours...)"
                 displayTitle={<span>LinkTrack <span className="font-light text-white/70 text-lg">(projet en cours...)</span></span>}
                 description={`Raccourcisseur d'URLs SaaS avec tracking des clics`}
-                imageUrl="src/img/LinkTrack.png"
+                imageUrl={imgLinkTrack}
                 techStack={['Node.js', 'Express', 'PostgreSQL', 'Docker', 'JWT', 'React', 'Tailwind CSS']}
                 repoLink="https://github.com/DenisVuong/LinkTrack"
                 onClick={() => setSelectedProject({
@@ -215,7 +220,7 @@ export default function App() {
                   description: `Architecture REST API robuste avec authentification sécurisée JWT et containerisation Docker. Le système backend gère le tracking des clics et le parsing User-Agent.
                   
                   Le développement de l'interface utilisateur (front-end) est actuellement en cours.`,
-                  imageUrl: "src/img/LinkTrack.png",
+                  imageUrl: imgLinkTrack,
                   techStack: ['Node.js', 'Express', 'PostgreSQL', 'Docker', 'JWT', 'React', 'Tailwind CSS'],
                   repoLink: "https://github.com/DenisVuong/LinkTrack"
                 })}
@@ -223,13 +228,13 @@ export default function App() {
               <ProjectCard
                 title="Dexia"
                 description="Développement d'une application mobile de recommandation de films."
-                imageUrl="src/img/dexia logo.png"
+                imageUrl={imgDexia}
                 techStack={['React Native', 'Native Wind', 'Expo', 'SQLite', 'Git/Github']}
                 repoLink="https://github.com/Maxime-Lointier/Dexia"
                 onClick={() => setSelectedProject({
                   title: "Dexia - Application mobile",
                   description: "Dexia est une application mobile native conçue pour offrir des recommandations de films via une interface de type 'swipe'. Le projet intègre un algorithme de filtrage qui analyse les interactions de l'utilisateur (Likes/Dislikes) pour affiner les suggestions en temps réel et afficher un taux de compatibilité. Les fonctionnalités incluent la gestion de profil, la visualisation de statistiques dynamiques et la gestion de listes (historique et watchlist) avec persistance des données.",
-                  imageUrl: "src/img/dexia_screen.png",
+                  imageUrl: imgDexiaScreen,
                   techStack: ['React Native', 'Native Wind', 'Expo', 'SQLite', 'Git/Github'],
                   repoLink: "https://github.com/Maxime-Lointier/Dexia"
                 })}
@@ -237,13 +242,13 @@ export default function App() {
               <ProjectCard
                 title="Gestionnaire de stages BUT"
                 description="Application web responsive centralisant le suivi administratif et pédagogique des stages (S4/S6) pour l'IUT de Villetaneuse."
-                imageUrl="src/img/saephp.png"
+                imageUrl={imgSaePhp}
                 techStack={['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS']}
                 repoLink="https://github.com/LiOlivier/SAE-S3.01"
                 onClick={() => setSelectedProject({
                   title: "Gestionnaire de stages BUT",
                   description: "Conception d'une plateforme de gestion complète suite à la réforme du BUT. L'outil permet le suivi en temps réel des étapes clés : conventions, comptes rendus d'installation, entretiens de mi-parcours et dépôts de rapports. Comprend des tableaux de bord spécifiques pour les étudiants, tuteurs et responsables, avec système de notifications et historique.",
-                  imageUrl: "src/img/saephp.png",
+                  imageUrl: imgSaePhp,
                   techStack: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS', 'Git/Github'],
                   repoLink: "https://github.com/LiOlivier/SAE-S3.01"
                 })}
