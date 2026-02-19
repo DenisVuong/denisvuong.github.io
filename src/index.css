@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+/* Reset minimal */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* Empêche le scroll sur le body, géré par main dans App.jsx */
+    height: 100%;
+    width: 100%;
+}
+
+/* Cacher la scrollbar (Chrome, Safari, Opera) */
+main::-webkit-scrollbar {
+    display: none;
+}
+
+/* Cacher la scrollbar (IE, Edge, Firefox) */
+main {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
