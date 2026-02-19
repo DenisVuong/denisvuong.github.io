@@ -340,7 +340,7 @@ export default function App() {
                 <div className="flex flex-col gap-6">
                   <ExperienceCard
                     role="Consultant Digital Process Automation (stage)"
-                    company="Société de conseil et services IT"
+                    company="ATS Vietnam"
                     date="Février 2025 - Avril 2025"
                     location="Ho Chi Minh, Vietnam"
                     description="Ce stage visait à moderniser les processus de gestion SAP en développant des solutions d'automatisation intelligente sur le cloud Microsoft. 
