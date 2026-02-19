@@ -183,7 +183,7 @@ export default function App() {
               {/* Text Content - 2/3 width */}
               <div className="md:col-span-2 space-y-6 text-lg text-white/80 leading-relaxed">
                 <p>
-                  Hello ! Je suis Denis, développeur Full Stack avec un gros faible pour le Back-end et l'Intelligence Artificielle. Ce qui me passionne dans le code, c'est le moment précis où un produit prend vie et devient 100 % fonctionnel. Que ce soit en créant une automatisation ou en développant une application complète de A à Z, mon moteur reste le même : concevoir des outils concrets qui facilitent le quotidien et résolvent de vrais problèmes. Je ne code pas juste pour aligner des lignes, je code pour que ça serve à quelqu'un.
+                  Hello ! Je suis Denis, étudiant en 3ème année de BUT informatique à l'IUT de Villetaneuse. Ce qui me passionne dans le code, c'est le moment précis où un produit prend vie et devient 100 % fonctionnel. Que ce soit en créant une automatisation ou en développant une application complète de A à Z, mon moteur reste le même : concevoir des outils concrets qui facilitent le quotidien et résolvent de vrais problèmes. Je ne code pas juste pour aligner des lignes, je code pour que ça serve à quelqu'un.
                 </p>
                 <p>
                   Mon approche du développement commence d'ailleurs toujours par l'utilisateur. Avant même de toucher à mon IDE, je me pose deux questions : « Quel problème cela résout-il, et pour qui ? ». Une fois l'utilité définie, j'imagine l'identité visuelle et le design du projet, puis je passe à la technique.
