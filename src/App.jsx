@@ -183,15 +183,16 @@ export default function App() {
               {/* Text Content - 2/3 width */}
               <div className="md:col-span-2 space-y-6 text-lg text-white/80 leading-relaxed">
                 <p>
-                  Hello ! Je suis Denis, étudiant en 3ème année de BUT informatique à l'IUT de Villetaneuse. Ce qui me passionne dans le code, c'est le moment précis où un produit prend vie et devient 100 % fonctionnel. Que ce soit en créant une automatisation ou en développant une application complète de A à Z, mon moteur reste le même : concevoir des outils concrets qui facilitent le quotidien et résolvent de vrais problèmes. Je ne code pas juste pour aligner des lignes, je code pour que ça serve à quelqu'un.
+                  Hello ! Je suis Denis, étudiant en 3ème année de BUT Informatique à l'IUT de Villetaneuse. Ce qui me plaît vraiment dans le développement, c'est de créer des choses concrètes. Que ce soit un script d'automatisation ou une application complète, mon but est simple : concevoir des outils utiles qui répondent à de vrais besoins au quotidien.
                 </p>
                 <p>
-                  Mon approche du développement commence d'ailleurs toujours par l'utilisateur. Avant même de toucher à mon IDE, je me pose deux questions : « Quel problème cela résout-il, et pour qui ? ». Une fois l'utilité définie, j'imagine l'identité visuelle et le design du projet, puis je passe à la technique.
+                  Ma méthode de travail commence toujours par l'utilisateur. Avant de me lancer dans le code, j'essaie de bien comprendre à qui servira le projet et comment. Je réfléchis d'abord à l'utilité, puis au design et à l'interface, avant de passer à la technique.
                 </p>
                 <p>
-                  Quand je ne suis pas en train de débugger mon code, j'échange mon clavier pour une tête de lion ! Depuis juin 2023, je suis membre très actif de l'association LDFA (Lion Dance Franco-Asiatique). Vous pouvez me retrouver sous le costume du lion ou aux percussions lors de grands événements (nous avons notamment fait des démonstrations chez Tang Frères et dans les locaux de Google !). J'y exprime aussi ma créativité visuelle en gérant toute la communication de l'association sur Instagram et TikTok (montage vidéo, photo, création d'affiches). C'est une passion intense qui m'apporte un équilibre parfait entre tradition, esprit d'équipe et dépassement de soi !
+                  En dehors des écrans, je fais de la Danse du Lion depuis juin 2023 avec l'association LDFA. Je suis souvent sous la tête du lion ou aux percussions, et on a d'ailleurs eu l'occasion de se produire pour Tang Frères ou encore dans les locaux de Google ! Je gère aussi toute leur communication sur Instagram et TikTok (montage vidéo, photo, affiches). C'est une super expérience qui me permet d'allier esprit d'équipe, créativité et culture.
                 </p>
               </div>
+
 
               {/* Image Placeholder - 1/3 width */}
               <div className="md:col-span-1 flex justify-center items-center">
@@ -339,7 +340,7 @@ export default function App() {
                 </h3>
                 <div className="flex flex-col gap-6">
                   <ExperienceCard
-                    role="Consultant Digital Process Automation (stage)"
+                    role="Développeur solutions IA & automatisation (stage)"
                     company="ATS Vietnam"
                     date="Février 2025 - Avril 2025"
                     location="Ho Chi Minh, Vietnam"
