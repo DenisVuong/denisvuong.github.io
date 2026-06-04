@@ -147,7 +147,7 @@ export default function App() {
 
           <div className='absolute inset-0 flex flex-col items-center justify-center pointer-events-none z-10'>
             <SplitText
-              text="Étudiant en BUT Informatique"
+              text="Futur étudiant en Pré-MSc chez Epitech"
               className="text-xl md:text-2xl font-light uppercase tracking-widest text-center"
               delay={0.2}
               duration={1}
@@ -163,7 +163,7 @@ export default function App() {
               enableScrollTrigger={false}
             />
             <SplitText
-              text="En recherche d'un stage à partir du 9 mars 2026"
+              text="En recherche d'une alternance pour janvier 2027"
               className="text-xl md:text-1xl font-light uppercase mt-1 text-center"
               delay={0.5}
               duration={0.5}
