@@ -307,7 +307,18 @@ export default function App() {
                   {/* Timeline Item 1 */}
                   <div className="relative">
                     <div className="absolute w-3 h-3 bg-white rounded-full -left-[39px] top-1.5 ring-4 ring-black"></div>
-                    <span className="text-xs font-mono text-white/60 mb-1 block">2023 - Présent</span>
+                    <span className="text-xs font-mono text-white/60 mb-1 block">2026 - 2029</span>
+                    <h4 className="text-xl font-bold mb-1">Pré-MSc et MSc</h4>
+                    <p className="text-white/60 text-sm">Epitech Paris (Le Kremlin-Bicêtre)</p>
+                    <p className="mt-3 text-white/50 text-sm leading-relaxed">
+                      Étudiant en Pré-MSc puis en MSc pendant 2 ans.
+                    </p>
+                  </div>
+
+                  {/* Timeline Item 2 */}
+                  <div className="relative">
+                    <div className="absolute w-3 h-3 bg-white/20 rounded-full -left-[39px] top-1.5 ring-4 ring-black"></div>
+                    <span className="text-xs font-mono text-white/40 mb-1 block">2023 - 2026</span>
                     <h4 className="text-xl font-bold mb-1">BUT Informatique</h4>
                     <p className="text-white/60 text-sm">Sorbonne Paris Nord - IUT de Villetaneuse</p>
                     <p className="mt-3 text-white/50 text-sm leading-relaxed">
@@ -318,7 +329,7 @@ export default function App() {
                     </p>
                   </div>
 
-                  {/* Timeline Item 2 */}
+                  {/* Timeline Item 3 */}
                   <div className="relative">
                     <div className="absolute w-3 h-3 bg-white/20 rounded-full -left-[39px] top-1.5 ring-4 ring-black"></div>
                     <span className="text-xs font-mono text-white/40 mb-1 block">2020 - 2023</span>
