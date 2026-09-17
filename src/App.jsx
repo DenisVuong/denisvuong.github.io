@@ -189,7 +189,7 @@ export default function App() {
                   Ma méthode de travail commence toujours par l'utilisateur. Avant de me lancer dans le code, j'essaie de bien comprendre à qui servira le projet et comment. Je réfléchis d'abord à l'utilité, puis au design et à l'interface, avant de passer à la technique.
                 </p>
                 <p>
-                  En dehors des écrans, je fais de la Danse du Lion depuis juin 2023 avec l'association LDFA. Je suis souvent sous la tête du lion ou aux percussions, et on a d'ailleurs eu l'occasion de se produire pour Tang Frères ou encore dans les locaux de Google ! Je gère aussi toute leur communication sur Instagram et TikTok (montage vidéo, photo, affiches). C'est une super expérience qui me permet d'allier esprit d'équipe, créativité et culture.
+                  En dehors des écrans, je fais de la danse du lion depuis juin 2023 avec l'association LDFA. Je suis souvent sous la tête du lion ou aux percussions, et on a d'ailleurs eu l'occasion de se produire pour Tang Frères ou encore dans les locaux de Google ! Je gère aussi toute leur communication sur Instagram et TikTok (montage vidéo, photo, affiches). C'est une super expérience qui me permet d'allier esprit d'équipe, créativité et culture.
                 </p>
               </div>
 
