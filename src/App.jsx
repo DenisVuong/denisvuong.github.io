@@ -147,7 +147,7 @@ export default function App() {
 
           <div className='absolute inset-0 flex flex-col items-center justify-center pointer-events-none z-10'>
             <SplitText
-              text="Futur étudiant en Pré-MSc chez Epitech"
+              text="Étudiant en Pré-MSc chez Epitech"
               className="text-xl md:text-2xl font-light uppercase tracking-widest text-center"
               delay={0.2}
               duration={1}
@@ -183,7 +183,7 @@ export default function App() {
               {/* Text Content - 2/3 width */}
               <div className="md:col-span-2 space-y-6 text-lg text-white/80 leading-relaxed">
                 <p>
-                  Hello ! Je suis Denis, étudiant en 3ème année de BUT Informatique à l'IUT de Villetaneuse. Ce qui me plaît vraiment dans le développement, c'est de créer des choses concrètes. Que ce soit un script d'automatisation ou une application complète, mon but est simple : concevoir des outils utiles qui répondent à de vrais besoins au quotidien.
+                  Hello ! Je suis Denis, étudiant en Pré-MSc (Bac +3) à Epitech. Passionné par le développement Full Stack et le Cloud, j'aime créer des choses concrètes. Que ce soit de l'automatisation de processus (comme lors de mon récent stage chez ATS Vietnam) ou la conception d'applications complètes, mon but est de développer des solutions utiles qui répondent à de vrais besoins. Je suis d'ailleurs <strong>à la recherche d'une alternance de 3 ans à partir de janvier 2027</strong> (rythme : 4 semaines entreprise / 2 semaines école).
                 </p>
                 <p>
                   Ma méthode de travail commence toujours par l'utilisateur. Avant de me lancer dans le code, j'essaie de bien comprendre à qui servira le projet et comment. Je réfléchis d'abord à l'utilité, puis au design et à l'interface, avant de passer à la technique.
