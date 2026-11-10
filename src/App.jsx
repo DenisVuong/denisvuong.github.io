@@ -180,7 +180,7 @@ export default function App() {
                 <p>Étudiant à Epitech, je m’intéresse au développement full stack et au cloud. Ce qui me plaît : partir d’un besoin concret et construire quelque chose qui sera vraiment utile. Chez ATS Vietnam, j’ai notamment travaillé sur l’automatisation de processus.</p>
                 <p>Avant de coder, j’aime comprendre à qui s’adresse un projet et comment il sera utilisé. L’interface et la technique viennent ensuite, au service de cette idée.</p>
                 <p>En dehors du code, je pratique la danse du lion avec l’association LDFA depuis 2023. Sous la tête du lion ou aux percussions, j’ai participé à des représentations pour Tang Frères et chez Google. Je m’occupe aussi de notre communication sur Instagram et TikTok, de la photo au montage vidéo.</p>
-                <div className="about-availability"><span className="availability-dot" aria-hidden="true" />À la recherche d’une alternance de 3 ans dès janvier 2027<br /><span>4 semaines en entreprise / 2 semaines à l’école</span></div>
+                <div className="about-availability"><span className="availability-dot" aria-hidden="true" />À la recherche d’une alternance de 2 ans dès janvier 2027<br /><span>4 semaines en entreprise / 2 semaines à l’école</span></div>
               </div>
             </div>
           </div>
