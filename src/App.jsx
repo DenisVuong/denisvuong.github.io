@@ -199,7 +199,7 @@ export default function App() {
                 repoLink="https://github.com/DenisVuong/welcome-to-my-savane"
                 onClick={() => setSelectedProject({
                   title: "Welcome to My Savane",
-                  description: "Un job board réalisé en binôme à Epitech, de la recherche d’offres au suivi des candidatures.\n\nJ’ai travaillé sur le catalogue et les filtres d’offres, son administration, le dépôt et le versionnage des CV, ainsi que l’espace entreprise et la gestion des comptes recruteurs.",
+                  description: "Welcome to My Savane est une plateforme de recrutement qui réunit candidats et recruteurs. Les candidats peuvent rechercher et filtrer des offres, créer leur profil, déposer leurs CV et suivre leurs candidatures.\n\nLes recruteurs disposent d’un espace pour gérer les offres et les candidatures de leur entreprise. Une interface d’administration permet également de gérer les entreprises, les catégories et les comptes. Ce projet a été réalisé en binôme à Epitech.",
                   imageUrl: "https://github.com/DenisVuong/welcome-to-my-savane/raw/main/docs/assets/readme/previews/01-accueil-desktop.webp",
                   techStack: ['React', 'Express', 'PostgreSQL', 'Docker'],
                   repoLink: "https://github.com/DenisVuong/welcome-to-my-savane"
