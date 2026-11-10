@@ -304,10 +304,10 @@ export default function App() {
                   <div className="relative">
                     <div className="absolute w-3 h-3 bg-white rounded-full -left-[39px] top-1.5 ring-4 ring-black"></div>
                     <span className="text-xs font-mono text-white/60 mb-1 block">2026 - 2029</span>
-                    <h4 className="text-xl font-bold mb-1">Pré-MSc et MSc</h4>
+                    <h4 className="text-xl font-bold mb-1">Pré-MSc et Master Of Science</h4>
                     <p className="text-white/60 text-sm">Epitech Paris (Le Kremlin-Bicêtre)</p>
                     <p className="mt-3 text-white/50 text-sm leading-relaxed">
-                      Étudiant en Pré-MSc puis en MSc pendant 2 ans.
+                      Étudiant en Pré-MSc puis en Master Of Science pendant 2 ans.
                     </p>
                   </div>
 
