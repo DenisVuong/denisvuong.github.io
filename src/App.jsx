@@ -20,12 +20,6 @@ import imgSaePhp from './img/saephp.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const handleAnimationComplete = () => {
-
-  console.log('All letters have animated!');
-
-};
-
 export default function App() {
   const [selectedProject, setSelectedProject] = useState(null);
   const projectsRef = useRef(null);
@@ -147,7 +141,7 @@ export default function App() {
 
           <div className='absolute inset-0 flex flex-col items-center justify-center pointer-events-none z-10'>
             <SplitText
-              text="Étudiant en Pré-MSc chez Epitech"
+              text="Étudiant en Master of Science chez Epitech"
               className="text-xl md:text-2xl font-light uppercase tracking-widest text-center"
               delay={0.2}
               duration={1}
@@ -175,30 +169,18 @@ export default function App() {
 
         </Section>
 
-        <Section id="about" className="border-white/10 relative">
-          <div className="container mx-auto px-4 h-full flex flex-col justify-center" ref={aboutRef}>
-            <h2 className="text-4xl font-bold mb-8 md:mb-12">À propos</h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
-              {/* Text Content - 2/3 width */}
-              <div className="md:col-span-2 space-y-6 text-lg text-white/80 leading-relaxed">
-                <p>
-                  Hello ! Je suis Denis, étudiant en Pré-MSc (Bac +3) à Epitech. Passionné par le développement Full Stack et le Cloud, j'aime créer des choses concrètes. Que ce soit de l'automatisation de processus (comme lors de mon récent stage chez ATS Vietnam) ou la conception d'applications complètes, mon but est de développer des solutions utiles qui répondent à de vrais besoins. Je suis d'ailleurs <strong>à la recherche d'une alternance de 3 ans à partir de janvier 2027</strong> (rythme : 4 semaines entreprise / 2 semaines école).
-                </p>
-                <p>
-                  Ma méthode de travail commence toujours par l'utilisateur. Avant de me lancer dans le code, j'essaie de bien comprendre à qui servira le projet et comment. Je réfléchis d'abord à l'utilité, puis au design et à l'interface, avant de passer à la technique.
-                </p>
-                <p>
-                  En dehors des écrans, je fais de la danse du lion depuis juin 2023 avec l'association LDFA. Je suis souvent sous la tête du lion ou aux percussions, et on a d'ailleurs eu l'occasion de se produire pour Tang Frères ou encore dans les locaux de Google ! Je gère aussi toute leur communication sur Instagram et TikTok (montage vidéo, photo, affiches). C'est une super expérience qui me permet d'allier esprit d'équipe, créativité et culture.
-                </p>
+        <Section id="about" className="about-section relative overflow-hidden">
+          <div className="about-content container mx-auto px-6 relative z-10" ref={aboutRef}>
+            <h2 className="text-4xl font-bold mb-10 md:mb-14">À propos</h2>
+            <div className="about-layout">
+              <div className="about-intro">
+                <p>Salut, moi c’est Denis.<br /><span>J’aime donner vie aux idées.</span></p>
               </div>
-
-
-              {/* Image Placeholder - 1/3 width */}
-              <div className="md:col-span-1 flex justify-center items-center">
-                {/* <div className="w-80 h-80 rounded-full bg-white/5 border border-white/10 flex items-center justify-center relative overflow-hidden group shadow-lg shadow-white/5">
-                  <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                </div> */}
+              <div className="about-story">
+                <p>Étudiant à Epitech, je m’intéresse au développement full stack et au cloud. Ce qui me plaît : partir d’un besoin concret et construire quelque chose qui sera vraiment utile. Chez ATS Vietnam, j’ai notamment travaillé sur l’automatisation de processus.</p>
+                <p>Avant de coder, j’aime comprendre à qui s’adresse un projet et comment il sera utilisé. L’interface et la technique viennent ensuite, au service de cette idée.</p>
+                <p>En dehors du code, je pratique la danse du lion avec l’association LDFA depuis 2023. Sous la tête du lion ou aux percussions, j’ai participé à des représentations pour Tang Frères et chez Google. Je m’occupe aussi de notre communication sur Instagram et TikTok, de la photo au montage vidéo.</p>
+                <div className="about-availability"><span className="availability-dot" aria-hidden="true" />À la recherche d’une alternance de 3 ans dès janvier 2027<br /><span>4 semaines en entreprise / 2 semaines à l’école</span></div>
               </div>
             </div>
           </div>
@@ -206,9 +188,23 @@ export default function App() {
 
         <Section id="projects" className="relative">
           <TechBackground />
-          <div className="container mx-auto px-4 h-full flex flex-col justify-center relative z-10" ref={projectsRef}>
+          <div className="container mx-auto px-4 py-24 h-full flex flex-col justify-center relative z-10" ref={projectsRef}>
             <h2 className="text-4xl font-bold mb-12 text-center">Projets</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+              <ProjectCard
+                title="Welcome to My Savane"
+                description="Job board réalisé en binôme pour accompagner candidats et recruteurs."
+                imageUrl="https://github.com/DenisVuong/welcome-to-my-savane/raw/main/docs/assets/readme/previews/01-accueil-desktop.webp"
+                techStack={['React', 'Express', 'PostgreSQL', 'Docker']}
+                repoLink="https://github.com/DenisVuong/welcome-to-my-savane"
+                onClick={() => setSelectedProject({
+                  title: "Welcome to My Savane",
+                  description: "Un job board réalisé en binôme à Epitech, de la recherche d’offres au suivi des candidatures.\n\nJ’ai travaillé sur le catalogue et les filtres d’offres, son administration, le dépôt et le versionnage des CV, ainsi que l’espace entreprise et la gestion des comptes recruteurs.",
+                  imageUrl: "https://github.com/DenisVuong/welcome-to-my-savane/raw/main/docs/assets/readme/previews/01-accueil-desktop.webp",
+                  techStack: ['React', 'Express', 'PostgreSQL', 'Docker'],
+                  repoLink: "https://github.com/DenisVuong/welcome-to-my-savane"
+                })}
+              />
               <ProjectCard
                 title="LinkTrack (projet en cours...)"
                 displayTitle={<span>LinkTrack <span className="font-light text-white/70 text-lg">(projet en cours...)</span></span>}

@@ -23,3 +23,46 @@ main {
     scrollbar-width: none;
     /* Firefox */
 }
+/* Quiet tonal surfaces echo the monochrome textures used throughout the site. */
+.about-section {
+    background: radial-gradient(ellipse at 88% 24%, #292929 0%, #111 34%, #050505 72%);
+}
+.about-section::before, .contact-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(125deg, transparent 42%, rgba(255,255,255,.035) 42.1%, transparent 42.3%),
+                linear-gradient(125deg, transparent 58%, rgba(255,255,255,.025) 58.1%, transparent 58.3%);
+}
+.about-content { padding-top: 7rem; padding-bottom: 7rem; }
+.about-layout { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(3rem, 8vw, 9rem); align-items: start; }
+.about-intro { font-size: clamp(2rem, 4vw, 4rem); font-weight: 700; line-height: 1.1; letter-spacing: -.035em; }
+.about-intro span { color: #aaa; }
+.about-story { max-width: 42rem; color: #d0d0d0; font-size: 1.05rem; line-height: 1.75; }
+.about-story p + p { margin-top: 1.25rem; }
+.about-availability { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #555; color: white; font-weight: 600; }
+.about-availability > span:last-child { color: #aaa; font-weight: 400; font-size: .9rem; }
+.availability-dot { display: inline-block; width: .5rem; height: .5rem; margin-right: .7rem; border-radius: 50%; background: #ddd; vertical-align: middle; }
+.contact-section { background: radial-gradient(ellipse at 12% 85%, #303030 0%, #111 37%, #050505 75%); }
+.contact-content { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(3rem, 9vw, 10rem); align-items: end; padding-top: 8rem; padding-bottom: 8rem; }
+.contact-heading h2 { font-size: clamp(3.5rem, 7vw, 6rem); font-weight: 700; line-height: .98; letter-spacing: -.035em; }
+.contact-heading h2 span { color: #aaa; }
+.contact-heading p { max-width: 28rem; margin-top: 2rem; color: #ccc; font-size: 1.1rem; line-height: 1.7; }
+.contact-links { border-top: 1px solid #555; }
+.contact-links a { display: flex; align-items: center; gap: 1.25rem; min-height: 6rem; border-bottom: 1px solid #555; transition: background-color .2s; }
+.contact-links a:hover, .contact-links a:focus-visible { background: rgba(255,255,255,.06); }
+.contact-icon { font-size: 1.5rem; flex: none; }
+.contact-links strong, .contact-links small { display: block; }
+.contact-links small { color: #bbb; margin-top: .25rem; overflow-wrap: anywhere; }
+.contact-arrow { margin-left: auto; flex: none; }
+:focus-visible { outline: 2px solid white; outline-offset: 4px; }
+::selection { background: #ddd; color: #111; }
+@media (max-width: 767px) {
+    .about-layout, .contact-content { grid-template-columns: 1fr; }
+    .about-content, .contact-content { padding-top: 7rem; padding-bottom: 5rem; }
+    .about-story { font-size: 1rem; }
+    header { gap: 1rem; }
+    header nav { gap: .8rem !important; overflow-x: auto; }
+    header nav a { white-space: nowrap; font-size: .65rem !important; }
+}
